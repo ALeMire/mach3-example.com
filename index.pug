@@ -7,8 +7,14 @@ doctype html
 html
   include /partials/head.pug
   body
-    h1 #{title}
-    p A static site builder using gulp, metalsmith, and gulpsmith.
-    ul 
-      each val in data.entries
-        li= val.sys.id
+    header
+      h1 #{title}
+      ul
+        li A static site builder using Gulp, Metalsmith, and Gulpsmith.
+        li Preprocessing with Front Matter, Pug, and Sass.
+        li Content Management with Contentful.
+        li Development Server with gulp-connect and gulp-watch.
+        li Deployment to Github Pages via gulp-gh-pages.
+      ul 
+        each val in data.entries
+          li= val.sys.id
